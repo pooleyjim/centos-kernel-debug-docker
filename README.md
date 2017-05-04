@@ -6,3 +6,4 @@ DEBUG_KERNEL="kernel-$(uname -r)"
 HOST_VOLUME="./dumps"
 docker run -e DEBUG_KERNEL=$DEBUG_KERNEL -v $HOST_VOLUME:/var/crash/
 ```
+Place your vmcore file from your kernel dump in the provided dumps folder or change the path to where your dump file is.
